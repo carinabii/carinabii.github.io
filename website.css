@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ul a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+}
+
+ul a:hover{
+    color:palevioletred;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+
+h1{
+    background-image:url("../HTML/images/blue.jpg");
+    color:seashell;
+    text-align: center;
+    font-family:monospace;
+    font-weight: bold;
+    font-size: 50px;
+    padding:40px;
+
+}
+
+.todoBlock{ 
+    position:relative;
+    float: left;
+    margin: 0% 1.5% 0% 4.5%;
+    width:65%;
+    min-height: 250px;
+    padding:4%;
+
+    border-radius: 15px;
+    border: 2px solid steelblue;
+
+    background-color:aliceblue;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.timerBlock{
+    /* align-self: flex-end;
+    display: inline; */
+    position: relative;
+    float:right;
+    margin: 0% 4.5% 0% 1.5%;
+    width:20%;
+    min-height:250px;
+    padding:3%;
+
+    border: 2px solid steelblue;
+    border-radius: 15px;
+
+    background-color:aliceblue;
+    font-family: monospace;
+    box-sizing:border-box;
+}
+
+@media(max-width:600px){
+    .todoBlock{
+        width:94%;
+        float:none;
+        margin:0% 3% 5% 3%;
+
+    }
+
+    .timerBlock{
+        width:94%;
+        float:none;
+        margin:0% 3% 0% 3%;
+    }
+}
+
+@media(min-width:1000px){
+    .todoBlock{
+        min-height:300px;
+    }
+
+    .timerBlock{
+        min-height:300px
+    }
+
+}
+
+
+
+.todoBlock h2{
+    color:black;
+    
+}
+
+.listBox{
+    padding: 2% 5%;
+}
+
+.listBox ul li{
+    padding: 0;
+    list-style:square;
+    color:black;
+
+}
+
+.formGroup form{
+    display:inline;
+}
+
+.formGroup input[type="text"]{
+    padding:5px;
+    width: 75%;
+    border-radius:5px;
+    border: 2px solid steelblue;
+}
+
+button{
+    display: inline;
+    background-color:steelblue;
+    color:#f4f4f4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width:15%;
+
+}
+
+button:hover{
+    background-color: rgb(77, 252, 252);
+    color:black;
+}
+
+.controlBox button{
+    display:inline;
+    align-items: center;
+    margin-right: 2.5%;
+    width:45%;
+}
+
+.timerBlock button{
+    display:block;
+    /* align-items: center; */
+    width:80%;
+    margin:1% 10%;
+
+}
+
+.timerBlock h2{
+    font-size: 16px;
+    text-align: center;
+    padding:0% 3%;
+}
+
+.timer{
+    font-size: 16px;
+    border: 2px solid slateblue;
+    border-radius: 5px;
+    background-color: rgb(173, 159, 235);
+    width: 80%;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    /* align-self: center;
+    position:relative; */
+
+}
+
+#minutes{
+    float:left;
+    width:20%;
+    margin-left:10%;
+    /* margin-left:2%;
+    text-align: center;
+    display:inline;
+    width:33%;
+    box-sizing: border-box; */
+}
+
+#colon{
+    float:none;
+    margin: 0 13%;
+    /* display:inline;
+    text-align: center;
+    width:33%;
+    box-sizing: border-box; */
+}
+
+#seconds{
+    float:right;
+    width: 20%;
+    margin-right:10%;
+    /* margin-right:2%;
+    display:inline;
+    text-align: center;
+    width:33%;
+    box-sizing: border-box; */
+}

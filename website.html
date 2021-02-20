@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO Website</title>
+        <link rel="stylesheet" type="text/css" href="website.css">
+
+        <audio id="myAudio">
+            <source src="Jarico - Island.mp3">
+        </audio>
+
+
+        <h1>No Time To Waste </h1>
+        
+    </head>
+    <br>
+    <br>
+    <body>
+        <div class="todoBlock">
+            <h2>TODO:</h2>
+            <br>
+            <div class="formGroup">
+                <form name="todo-adder"><input type="text" id="todoEntry" placeholder="enter a todo item"></form>
+                <button id="addEntryButton" class="buttons">Add Entry</button>
+            </div>
+            <br>
+
+            <div class="listBox">
+                <ul id="todoList"></ul>
+            </div>
+
+            <br>
+            <div class="controlBox">
+                <button id="removeSelectedButton" class="buttons">Remove</button>
+                <button id="refreshListButton" class="buttons">Refresh List</button>
+                <!-- <button id="saveButton" class="buttons">Save</button> -->
+            </div>
+            
+        </div>
+
+        <div class="timerBlock">
+
+            <h2>Pomodoro Timer</h2>
+            <br>
+            <div class="timer">
+                <!-- <p id="time">
+                    00:00
+                </p> -->
+                <span id="minutes">00</span>
+                <span id="colon"> :</span>
+                <span id="seconds">00</span>
+            </div>
+            <br>
+
+            <div class="timerButtons">
+                <button id="studyButton">Study</button>
+                <button id="shortBreakButton">Short Break</button>
+                <button id="longBreakButton">Long Break</button>
+                <button id="endButton">End</button>
+            </div>
+
+            
+            
+        </div>
+
+
+
+        <script src="todoScript.js"></script>
+        <script src="timerScript.js"></script>
+
+
+    </body>
+
+</div>
+</html>
