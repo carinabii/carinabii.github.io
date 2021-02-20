@@ -61,8 +61,8 @@ document.getElementById("studyButton").onclick = function() {studyTime()};
 function studyTime(){
     // alert("study");
     i++;
-    setTime(25, 0, true);
-    // setTime(0, 3, true);
+    // setTime(25, 0, true);
+    setTime(0, 3, true);
 }
 
 // Short Break Button Function:
