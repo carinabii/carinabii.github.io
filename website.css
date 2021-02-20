@@ -19,7 +19,7 @@ body{
 
 
 h1{
-    background-image:url("../images/blue.jpg");
+    background-color: teal;
     color:seashell;
     text-align: center;
     font-family:monospace;
